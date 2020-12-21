@@ -322,6 +322,65 @@ body {
   border: 4px solid #EB3E2E;
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.92);
+  z-index: 3;
+}
+.menu .menu-close {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  width: 18px;
+  height: 18px;
+  background-image: url("images/icons/icon-close.svg");
+  background-size: cover;
+}
+.menu .menu-dialog {
+  display: grid;
+  grid-template-columns: 238px;
+  grid-template-rows: repeat(2, 209px);
+  gap: 14px;
+}
+.menu .menu-dialog .menu-dialog__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-size: cover;
+}
+.menu .menu-dialog .menu-dialog__btn .menu-dialog__btn-icon {
+  margin-right: 13px;
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+}
+.menu .menu-dialog .menu-dialog__btn .menu-dialog__btn-caption {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.menu .menu-dialog .btn-about-more {
+  background-color: #EB3E2E;
+  background-image: url("images/mask-about-us.png");
+}
+.menu .menu-dialog .btn-about-more .menu-dialog__btn-icon {
+  background-image: url("images/icons/about-more.svg");
+}
+.menu .menu-dialog .btn-play-pc {
+  background-color: #5F5D4D;
+  background-image: url("images/mask-play-pc.png");
+}
+.menu .menu-dialog .btn-play-pc .menu-dialog__btn-icon {
+  background-image: url("images/icons/play-pc.svg");
+}
+
 .instruction {
   position: absolute;
   top: 60px;
