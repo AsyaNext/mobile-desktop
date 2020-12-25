@@ -322,6 +322,210 @@ body {
 .container .media .media-slider .active-slide {
   border: 4px solid #EB3E2E;
 }
+.container .helper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container .helper .instruction {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.container .helper .instruction .instruction-title {
+  margin-bottom: 32px;
+  max-width: 150px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.container .helper .instruction .instruction-steps .instruction-steps__item {
+  margin-bottom: 32px;
+  max-width: 180px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .helper .instruction .instruction-steps .instruction-steps__item .instruction-steps__item-number {
+  margin-right: 12px;
+  padding: 7px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.container .helper .instruction .instruction-steps .instruction-steps__item .instruction-steps__item-caption {
+  opacity: 0.6;
+  line-height: 17px;
+}
+.container .helper .instruction .instruction-warning {
+  max-width: 215px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .helper .instruction .instruction-warning .instruction-warning__icon {
+  margin-right: 12px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 44px;
+  color: #EB3E2E;
+}
+.container .helper .instruction .instruction-warning .instruction-warning__caption {
+  font-style: italic;
+  font-weight: normal;
+  line-height: 17px;
+}
+.container .helper .requirements {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  z-index: 1;
+}
+.container .helper .requirements .requirements-title {
+  margin-bottom: 32px;
+  max-width: 238px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.container .helper .requirements .requirements-list {
+  line-height: 21px;
+}
+.container .helper .requirements .requirements-list .requirements-list__item {
+  opacity: 0.6;
+}
+.container .helper .download {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1;
+}
+.container .helper .download .download-checked {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.container .helper .download .download-checked .download-checked__description {
+  margin-right: 18px;
+}
+.container .helper .download .download-checked .download-checked__description .download-checked__description-status {
+  margin-bottom: 7px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+}
+.container .helper .download .download-checked .download-checked__description .download-checked__description-company {
+  display: flex;
+  align-items: center;
+}
+.container .helper .download .download-checked .download-checked__description .download-checked__description-company .download-checked__description-company-by {
+  margin-right: 7px;
+  font-weight: 100;
+}
+.container .helper .download .download-checked .download-checked__separator {
+  width: 8px;
+  height: 62px;
+  background-color: #006D5C;
+  box-shadow: 0 0 30px #006D5C;
+}
+.container .helper .download .download-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.container .helper .download .download-link .download-link__qr {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+.container .helper .download .download-link .download-link__app {
+  padding: 14px 19px;
+  display: flex;
+  align-items: center;
+  background-color: #E0E0E0;
+  border-radius: 0 0 10px 10px;
+}
+.container .helper .download .download-link .download-link__app .download-link__app-logo {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  background-image: url("images/icons/icon-google-play.svg");
+  background-size: cover;
+}
+.container .helper .download .download-link .download-link__app .download-link__app-caption {
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.container .helper .social-networks {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  display: grid;
+  grid-template-rows: repeat(2, 84px);
+  grid-template-columns: repeat(3, 84px);
+  grid-gap: 16px;
+  z-index: 1;
+}
+.container .helper .social-networks .social-networks__item {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -o-transition: all 0.3s ease;
+  -ms-transform: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.container .helper .social-networks .social-networks__item:hover {
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.container .helper .social-networks .social-networks__item:active {
+  position: relative;
+  top: 1px;
+}
+.container .helper .social-networks .discord {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-image: url("images/icons/discord.svg"), linear-gradient(0deg, #7289DA 0%, #B9C8FF 100%);
+}
+.container .helper .social-networks .insta {
+  background-image: url("images/icons/insta.svg"), linear-gradient(135deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%);
+}
+.container .helper .social-networks .tiktok {
+  background-image: url("images/icons/tiktok.svg"), linear-gradient(135deg, #25F4EE 0%, #FE2C55 100%);
+}
+.container .helper .social-networks .youtube {
+  background-image: url("images/icons/youtube.svg"), linear-gradient(-45deg, #E53935 0%, #E5356A 100%);
+}
+.container .helper .social-networks .telegram {
+  background-image: url("images/icons/telegram.svg"), linear-gradient(-45deg, #03A9F4 0%, #42C4FF 100%);
+}
 
 .menu {
   position: fixed;
@@ -382,209 +586,15 @@ body {
   background-image: url("images/icons/play-pc.svg");
 }
 
-.instruction {
-  position: absolute;
-  top: 60px;
-  left: 60px;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
+@media (min-height: 1090px) and (min-width: 1400px) {
+  .container {
+    height: 100%;
+    justify-content: space-between;
+  }
+  .container .media {
+    position: relative;
+  }
 }
-.instruction .instruction-title {
-  margin-bottom: 32px;
-  max-width: 150px;
-  width: 100%;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-}
-.instruction .instruction-steps .instruction-steps__item {
-  margin-bottom: 32px;
-  max-width: 180px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.instruction .instruction-steps .instruction-steps__item .instruction-steps__item-number {
-  margin-right: 12px;
-  padding: 7px 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 10px;
-}
-.instruction .instruction-steps .instruction-steps__item .instruction-steps__item-caption {
-  opacity: 0.6;
-  line-height: 17px;
-}
-.instruction .instruction-warning {
-  max-width: 215px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.instruction .instruction-warning .instruction-warning__icon {
-  margin-right: 12px;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 44px;
-  color: #EB3E2E;
-}
-.instruction .instruction-warning .instruction-warning__caption {
-  font-style: italic;
-  font-weight: normal;
-  line-height: 17px;
-}
-
-.requirements {
-  position: absolute;
-  top: 60px;
-  right: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  z-index: 1;
-}
-.requirements .requirements-title {
-  margin-bottom: 32px;
-  max-width: 238px;
-  width: 100%;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-}
-.requirements .requirements-list {
-  line-height: 21px;
-}
-.requirements .requirements-list .requirements-list__item {
-  opacity: 0.6;
-}
-
-.download {
-  position: absolute;
-  bottom: 60px;
-  right: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  z-index: 1;
-}
-.download .download-checked {
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-}
-.download .download-checked .download-checked__description {
-  margin-right: 18px;
-}
-.download .download-checked .download-checked__description .download-checked__description-status {
-  margin-bottom: 7px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: white;
-}
-.download .download-checked .download-checked__description .download-checked__description-company {
-  display: flex;
-  align-items: center;
-}
-.download .download-checked .download-checked__description .download-checked__description-company .download-checked__description-company-by {
-  margin-right: 7px;
-  font-weight: 100;
-}
-.download .download-checked .download-checked__separator {
-  width: 8px;
-  height: 62px;
-  background-color: #006D5C;
-  box-shadow: 0 0 30px #006D5C;
-}
-.download .download-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.download .download-link .download-link__qr {
-  padding: 10px;
-  background-color: white;
-  border-radius: 10px 10px 0 0;
-}
-.download .download-link .download-link__app {
-  padding: 14px 19px;
-  display: flex;
-  align-items: center;
-  background-color: #E0E0E0;
-  border-radius: 0 0 10px 10px;
-}
-.download .download-link .download-link__app .download-link__app-logo {
-  margin-right: 12px;
-  width: 20px;
-  height: 20px;
-  background-image: url("images/icons/icon-google-play.svg");
-  background-size: cover;
-}
-.download .download-link .download-link__app .download-link__app-caption {
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #333333;
-}
-
-.social-networks {
-  position: absolute;
-  bottom: 60px;
-  left: 60px;
-  display: grid;
-  grid-template-rows: repeat(2, 84px);
-  grid-template-columns: repeat(3, 84px);
-  grid-gap: 16px;
-  z-index: 1;
-}
-.social-networks .social-networks__item {
-  border-radius: 6px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  -o-transition: all 0.3s ease;
-  -ms-transform: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.social-networks .social-networks__item:hover {
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-.social-networks .social-networks__item:active {
-  position: relative;
-  top: 1px;
-}
-.social-networks .discord {
-  grid-column: span 1;
-  grid-row: span 2;
-  background-image: url("images/icons/discord.svg"), linear-gradient(0deg, #7289DA 0%, #B9C8FF 100%);
-}
-.social-networks .insta {
-  background-image: url("images/icons/insta.svg"), linear-gradient(135deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%);
-}
-.social-networks .tiktok {
-  background-image: url("images/icons/tiktok.svg"), linear-gradient(135deg, #25F4EE 0%, #FE2C55 100%);
-}
-.social-networks .youtube {
-  background-image: url("images/icons/youtube.svg"), linear-gradient(-45deg, #E53935 0%, #E5356A 100%);
-}
-.social-networks .telegram {
-  background-image: url("images/icons/telegram.svg"), linear-gradient(-45deg, #03A9F4 0%, #42C4FF 100%);
-}
-
 @media (max-width: 1400px) {
   .container {
     margin: 0 30px;
@@ -612,9 +622,11 @@ body {
     margin: 0 auto;
   }
   .container .helper {
+    position: relative;
     margin: 60px auto;
     max-width: 800px;
     width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
