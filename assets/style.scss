@@ -4,12 +4,12 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   .header {
-    width: 100%;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .header-menu {
-      margin: 0 auto;
       max-width: 760px;
       width: 100%;
       display: flex;
@@ -511,9 +511,11 @@
 
 @media (max-width: 1400px) {
   .container {
+    margin: 0 30px;
     .media {
       position: relative;
       left: 0;
+      width: auto;
       height: auto;
       .media-material {
         position: relative;
@@ -532,33 +534,33 @@
         margin: 0 auto;
       }
     }
-  }
-  .helper {
-    margin: 60px auto;
-    max-width: 760px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    gap: 50px;
-    .instruction {
-      position: static;
-    }
-    .requirements {
-      position: static;
-    }
-    .download {
-      position: static;
-      order: 1;
-    }
-    .social-networks {
-      position: static;
-      align-self: flex-end;
+    .helper {
+      margin: 60px auto;
+      max-width: 800px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      gap: 50px;
+      .instruction {
+        position: static;
+      }
+      .requirements {
+        position: static;
+      }
+      .download {
+        position: static;
+        order: 1;
+      }
+      .social-networks {
+        position: static;
+        align-self: flex-end;
+      }
     }
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .container {
     .header {
       margin-top: 30px;
@@ -580,7 +582,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .container {
     .media {
       .media-material {
@@ -604,26 +606,26 @@
         }
       }
     }
-  }
-  .helper {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, auto);
-    justify-content: center;
-    .instruction {
-      align-items: center;
-      .instruction-title, .instruction-warning {
+    .helper {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(4, auto);
+      justify-content: center;
+      .instruction {
+        align-items: center;
+        .instruction-title, .instruction-warning {
+          text-align: center;
+        }
+      }
+      .requirements {
+        align-items: center;
         text-align: center;
       }
-    }
-    .requirements {
-      align-items: center;
-      text-align: center;
-    }
-    .download {
-      align-items: center;
-    }
-    .social-networks {
-      order: 2;
+      .download {
+        align-items: center;
+      }
+      .social-networks {
+        order: 2;
+      }
     }
   }
 }

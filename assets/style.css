@@ -35,9 +35,11 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
+  max-width: 100vw;
   width: 100%;
   min-height: 1080px;
   height: 100vh;
+  box-sizing: content-box;
   background-color: #0F0F0F;
   background-image: url("images/back.png");
   background-size: cover;
@@ -46,7 +48,6 @@ body {
 }
 @media (max-width: 1400px) {
   body {
-    padding: 0 30px;
     height: 100%;
   }
 }
@@ -54,14 +55,14 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .container .header {
-  width: 100%;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container .header .header-menu {
-  margin: 0 auto;
   max-width: 760px;
   width: 100%;
   display: flex;
@@ -585,9 +586,13 @@ body {
 }
 
 @media (max-width: 1400px) {
+  .container {
+    margin: 0 30px;
+  }
   .container .media {
     position: relative;
     left: 0;
+    width: auto;
     height: auto;
   }
   .container .media .media-material {
@@ -606,32 +611,31 @@ body {
     left: 0;
     margin: 0 auto;
   }
-
-  .helper {
+  .container .helper {
     margin: 60px auto;
-    max-width: 760px;
+    max-width: 800px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     gap: 50px;
   }
-  .helper .instruction {
+  .container .helper .instruction {
     position: static;
   }
-  .helper .requirements {
+  .container .helper .requirements {
     position: static;
   }
-  .helper .download {
+  .container .helper .download {
     position: static;
     order: 1;
   }
-  .helper .social-networks {
+  .container .helper .social-networks {
     position: static;
     align-self: flex-end;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .container .header {
     margin-top: 30px;
   }
@@ -648,7 +652,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .container .media .media-material {
     height: 250px;
   }
@@ -669,26 +673,25 @@ body {
     border: none;
     background-color: #EB3E2E;
   }
-
-  .helper {
+  .container .helper {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
     justify-content: center;
   }
-  .helper .instruction {
+  .container .helper .instruction {
     align-items: center;
   }
-  .helper .instruction .instruction-title, .helper .instruction .instruction-warning {
+  .container .helper .instruction .instruction-title, .container .helper .instruction .instruction-warning {
     text-align: center;
   }
-  .helper .requirements {
+  .container .helper .requirements {
     align-items: center;
     text-align: center;
   }
-  .helper .download {
+  .container .helper .download {
     align-items: center;
   }
-  .helper .social-networks {
+  .container .helper .social-networks {
     order: 2;
   }
 }
