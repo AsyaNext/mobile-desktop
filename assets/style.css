@@ -303,9 +303,11 @@ body {
   box-sizing: border-box;
   border: 4px solid #333333;
   border-radius: 4px;
-  background-image: url("images/material.png");
-  background-size: cover;
   cursor: pointer;
+}
+.container .media .media-slider .media-slider__item img {
+  width: 100%;
+  height: 100%;
 }
 .container .media .media-slider .media-slider__item:hover {
   border: 4px solid #EB3E2E;
@@ -651,6 +653,9 @@ body {
     border: none;
     height: 4px;
     background: rgba(255, 255, 255, 0.5);
+  }
+  .container .media .media-slider .media-slider__item img {
+    display: none;
   }
   .container .media .media-slider .media-slider__item:hover {
     border: none;
