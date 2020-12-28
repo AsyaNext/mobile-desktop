@@ -53,8 +53,10 @@ body {
 }
 
 .container {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .container .header {
   margin-top: 60px;
@@ -223,13 +225,12 @@ body {
   text-transform: uppercase;
 }
 .container .media {
-  position: absolute;
-  bottom: 0;
-  left: calc(50% - 700px);
+  position: relative;
   max-width: 1400px;
   width: 100%;
   height: 420px;
   cursor: pointer;
+  margin: -60px auto 0;
 }
 .container .media:hover .media-material:after, .container .media:hover .media-material__play {
   -o-transform: scale(1.1);
@@ -586,28 +587,18 @@ body {
   background-image: url("images/icons/play-pc.svg");
 }
 
-@media (min-height: 1090px) and (min-width: 1400px) {
-  .container {
-    height: 100%;
-    justify-content: space-between;
-  }
-  .container .media {
-    position: relative;
-  }
-}
 @media (max-width: 1400px) {
   .container {
     margin: 0 30px;
   }
   .container .media {
-    position: relative;
-    left: 0;
+    margin: 0;
     width: auto;
     height: auto;
   }
   .container .media .media-material {
     position: relative;
-    top: -30px;
+    top: 24px;
     left: 0;
     margin: 0 auto;
     border-radius: 4px;
@@ -617,7 +608,7 @@ body {
   }
   .container .media .media-slider {
     position: relative;
-    bottom: 50px;
+    bottom: 0;
     left: 0;
     margin: 0 auto;
   }
@@ -669,7 +660,7 @@ body {
     height: 250px;
   }
   .container .media .media-slider {
-    bottom: 0;
+    bottom: -40px;
     grid-template-columns: repeat(5, auto);
   }
   .container .media .media-slider .media-slider__item {

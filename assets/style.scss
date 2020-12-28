@@ -2,8 +2,10 @@
 @import "base";
 
 .container {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   .header {
     margin-top: 60px;
     display: flex;
@@ -163,13 +165,12 @@
     }
   }
   .media {
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 700px);
+    position: relative;
     max-width: 1400px;
     width: 100%;
     height: 420px;
     cursor: pointer;
+    margin: -60px auto 0;
     &:hover .media-material:after, &:hover .media-material__play {
       @include transform(scale(1.1));
     }
@@ -513,27 +514,16 @@
   }
 }
 
-@media (min-height: 1090px) and (min-width: 1400px) {
-  .container {
-    height: 100%;
-    justify-content: space-between;
-    .media {
-      position: relative;
-    }
-  }
-}
-
 @media (max-width: 1400px) {
   .container {
     margin: 0 30px;
     .media {
-      position: relative;
-      left: 0;
+      margin: 0;
       width: auto;
       height: auto;
       .media-material {
         position: relative;
-        top: -30px;
+        top: 24px;
         left: 0;
         margin: 0 auto;
         border-radius: 4px;
@@ -543,7 +533,7 @@
       }
       .media-slider {
         position: relative;
-        bottom: 50px;
+        bottom: 0;
         left: 0;
         margin: 0 auto;
       }
@@ -605,7 +595,7 @@
         height: 250px;
       }
       .media-slider {
-        bottom: 0;
+        bottom: -40px;
         grid-template-columns: repeat(5, auto);
         .media-slider__item {
           border: none;
