@@ -100,24 +100,22 @@
       margin-top: 44px;
       max-width: 492px;
       width: 100%;
-      display: inline-block;
       font-size: 26px;
       line-height: 39px;
       text-align: center;
-      .content-description__os {
+      .content-description__icon {
         display: inline-block;
+        margin: 0 10px;
+        position: relative;
+        top: 6px;
+        width: 25px;
+        height: 30px;
+        background-image: url("images/icons/green-logo-android.svg");
+        background-size: cover;
+      }
+      .content-description__os {
         font-size: 26px;
         color: #85C808;
-        .content-description__os-icon {
-          display: inline-block;
-          margin: 0 10px;
-          position: relative;
-          top: 6px;
-          width: 25px;
-          height: 30px;
-          background-image: url("images/icons/green-logo-android.svg");
-          background-size: cover;
-        }
       }
     }
     .content-btn {
@@ -632,7 +630,6 @@
     .content {
       .content-description {
         font-size: 18px;
-        line-height: 25px;
         .content-description__os {
           font-size: 18px;
         }

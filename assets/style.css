@@ -153,17 +153,11 @@ body {
   margin-top: 44px;
   max-width: 492px;
   width: 100%;
-  display: inline-block;
   font-size: 26px;
   line-height: 39px;
   text-align: center;
 }
-.container .content .content-description .content-description__os {
-  display: inline-block;
-  font-size: 26px;
-  color: #85C808;
-}
-.container .content .content-description .content-description__os .content-description__os-icon {
+.container .content .content-description .content-description__icon {
   display: inline-block;
   margin: 0 10px;
   position: relative;
@@ -172,6 +166,10 @@ body {
   height: 30px;
   background-image: url("images/icons/green-logo-android.svg");
   background-size: cover;
+}
+.container .content .content-description .content-description__os {
+  font-size: 26px;
+  color: #85C808;
 }
 .container .content .content-btn {
   margin-top: 40px;
@@ -692,7 +690,6 @@ body {
 @media (max-width: 450px) {
   .container .content .content-description {
     font-size: 18px;
-    line-height: 25px;
   }
   .container .content .content-description .content-description__os {
     font-size: 18px;
