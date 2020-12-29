@@ -640,6 +640,18 @@
         padding: 20px 40px;
       }
     }
+    .media {
+      .media-material {
+        &:after {
+          top: calc(50% - 20px);
+          left: calc(50% - 20px);
+          width: 40px;
+          height: 40px;
+          background-size: 15px 15px;
+          background-position: 13px center;
+        }
+      }
+    }
   }
 }
 
