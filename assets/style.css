@@ -528,7 +528,6 @@ body {
   right: 0;
   bottom: 0;
   display: none;
-  justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.92);
   z-index: 3;
@@ -544,11 +543,13 @@ body {
 }
 .menu .menu-dialog {
   display: grid;
-  grid-template-columns: 238px;
-  grid-template-rows: repeat(2, 209px);
+  grid-template-columns: repeat(auto-fit, 238px);
+  justify-content: center;
+  width: 100%;
   gap: 14px;
 }
 .menu .menu-dialog .menu-dialog__btn {
+  height: 209px;
   display: flex;
   justify-content: center;
   align-items: center;
